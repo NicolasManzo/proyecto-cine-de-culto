@@ -1,0 +1,745 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+     background-color: rgb(212, 171, 117);
+    grid-template-areas: 
+    "header"
+    "main"
+    "aside"
+    "footer";
+}
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+a {
+    color: rgb(224, 52, 52);
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    text-decoration: none;
+}
+ a:hover {
+    color: aliceblue;
+}
+h2 {
+    color: rgb(224, 52, 52);
+    font-family: 'Bangers', cursive;
+    font-size: 3rem;
+    text-decoration: underline;
+    padding-top: 5rem;
+    text-align: center;
+}
+p {
+    
+    color: black;
+    font-size: 1rem;
+    font-family: 'Special Elite', cursive;
+    text-align: justify;
+    line-height: 2rem;
+    margin: 1rem;
+    
+
+}
+/* HEADER */
+.header{
+    background-color: #000;
+    display: flex;
+    flex-flow: column wrap;
+}
+.header_img{
+    max-width: 12rem;
+}
+.header h1{
+    color:rgb(224, 52, 52);
+    font-family: 'Bangers', cursive;
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.header_nav{
+    justify-content: space-between;
+    width: 100%;
+}
+.header_nav li{
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  
+}
+
+/*  MAIN */
+.banner {
+    background-image: url(../img/movie.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+}
+.cinco_directores{
+    max-width: 100%;
+}
+.mas-premiadas{
+    max-width: 100%;
+}
+
+.directores-content,.peliculas-content,.mas-premiadas-content{
+display:grid;
+grid-template-areas: 
+"titulo titulo"
+"parrafo parrafo"
+"img video";
+gap: 2rem;
+max-width: 100%;
+}
+
+.directores-content h2,.peliculas-content h2,.mas-premiadas-content h2{
+    grid-area: titulo;
+    width: 100%;
+    justify-items: center;
+    max-height: 12rem;
+}
+
+.directores-content p,.peliculas-content p,.mas-premiadas-content p{
+    grid-area: parrafo;
+    margin-left: 1rem;
+}
+.directores-content.img{
+    grid-area:img;
+    justify-items: center;
+    max-width: 30rem;
+    max-height: 20rem;
+}
+.peliculas-content.img{
+    grid-area:img;
+    justify-items: center;
+    max-width: 40rem;
+    max-height: 30rem;
+}
+.mas-premiadas-content img{
+    grid-area:img;
+    justify-items: center;
+    max-width: 40rem;
+    max-height: 30rem;
+}
+
+
+.directores-content > iframe {
+    grid-area:video;
+    width: 30rem;
+    height: 20rem;
+    justify-items: center;
+    margin: 0 auto;
+}
+.peliculas-content > iframe {
+    grid-area:video;
+    width: 30rem;
+    height: 20rem;
+    justify-items: center;
+    margin: 0 auto;
+}
+.mas-premiadas-content > iframe{
+    grid-area:video;
+    width: 30rem;
+    height: 20rem;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.directores-content > h3{
+    margin-left: 1.5rem;
+}
+
+
+.elemento_kubrick{
+    background-image: url(../img/kubrick_stanley.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+       margin-left:1.5rem;
+       
+}
+.elemento_scorsese{
+    background-image: url(../img/scorsese.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+       margin-left:1.5rem;
+}
+.elemento_tarantino{
+    background-image: url(../img/Tarantino.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+       margin-left:1.5rem;
+}
+.elemento_spielberg{
+    background-image: url(../img/STEVEN\ SPIELBERG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+       margin-left:1.5rem;
+}
+.elemento_eastwood{
+    background-image:url(../img/clint-eastwood.jpg);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+       margin-left:1.5rem;
+}
+.robocop{
+    background-image:url(../img/robocop.webp);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+}
+.rambo{
+    background-image:url(../img/rambo.png);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+}
+.contsang{
+    background-image:url(../img/contacto-sangriento.jpg);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+}
+.jwick{
+    background-image:url(../img/john\ wick\ .png);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.terminator{
+    background-image:url(../img/terminator.jpg);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+    
+
+}
+.accion{
+    background-image:url(../img/accion\ imag\ .png);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.alien{
+    background-image:url(../img/alien\ fotooo.png);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+}
+.bladerunner{
+    background-image:url(../img/blade\ runner\ foto\ .png);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.matrix{
+    background-image:url(../img/matrix\ foto.jpeg);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.volveralfut{
+    background-image:url(../img/volver\ al\ futuro\ foto.jpg);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.tron{
+    background-image:url(../img/tron\ foto.jpg);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.cienciaficcion{
+    background-image:url(../img/imagen\ cyfy.png);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.exorcista{
+    background-image:url(../img/exorcista\ imag.png);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.texas{
+    background-image:url(../img/masacre_texas\ img.jpg);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.resplandor{
+    background-image:url(../img/el\ resplandor\ imag.jpg);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.warren{
+    background-image:url(../img/el\ conjuro.png);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.hered{
+    background-image:url(../img/Hereditary.jpg);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.terror{
+    background-image:url(../img/terror.png);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.tiempmod{
+    background-image:url(../img/chaplin.jpg);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.lewos{
+    background-image:url(../img/lewoski.jpg);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.relsal{
+    background-image:url(../img/relatos\ salvajes.jpg);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+
+}
+.panyloc{
+    background-image:url(../img/locuras\ vegas.jpg);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+
+}
+.marmota{
+    background-image:url(../img/marmota.jpg);   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+}
+.comedia{
+    background-image:url(../img/comedia.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+}
+.titanic{
+    background-image:url(../img/titanic.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+}
+.benhur{
+    background-image:url(../img/benhur.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+}
+.anillos{
+    background-image:url(../img/el\ senor\ de\ los\ anillos.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+}
+.viento{
+    background-image:url(../img/lo\ que\ el\ viento\ se\ llevo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+}
+.west{
+    background-image:url(../img/west\ side\ history.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left:1.5rem;
+}
+
+
+
+
+
+
+/*  ASIDE */
+
+.tabla-directores {
+    background-image: url(../img/premio\ directores.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: antiquewhite;
+    width: 25%;
+    height: 25%;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Bangers', cursive;
+    margin-top:2rem;
+}
+
+
+.tabla-grande {
+    width: 250px;
+    height: 250px;
+}
+
+.tabla-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+}
+
+.footer {
+    display: flex;
+    margin-top: 10rem;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    height: 13rem;
+}
+
+.footer_p {
+    color: rgb(255, 0, 0);
+    font-size: 18px;
+    font-family: 'Special Elite', cursive;
+    text-align: justify;
+    line-height: 25px;
+    margin: 15px;
+}
+
+.footer_img li {
+    display: inline-block;
+    padding: 2rem;
+}
+
+
+
+@media (max-width: 320px ){
+
+.header h1{
+    font-size: 3rem;
+}
+.header_img {
+    max-width: 9rem;
+    padding-bottom: 2rem;
+}
+.header_nav li{
+    display: block;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  
+}
+.banner {
+height: 11rem;
+}
+
+.directores-content,.peliculas-content,.mas-premiadas-content{
+display:grid;
+grid-template-areas: 
+ "titulo"
+ "parrafo"
+ "img"
+"video";
+gap: 0.8rem;
+}
+.mas-premiadas-content h2 {
+    
+    max-height: 18rem;
+}
+
+.img{
+    max-width: 90%;
+    height: 15rem;
+    margin-left: 1rem;
+
+}
+iframe{
+    max-width: 90%;
+   
+}
+.footer {
+    height: 13rem;
+}
+
+.footer_p {
+    margin: 0px;
+    font-size: 14px;
+    text-align: center;
+}
+.footer_img li {
+    display: inline-block;
+    padding: 0.5rem;
+    max-width: 1rem;
+    margin: 1rem
+}
+
+.footer_img li img {
+    width:2rem;
+}
+}
+
+@media(min-width:321px) and (max-width:480px){
+
+    .header h1{
+        font-size: 5rem;
+    }
+    .header_img {
+        max-width: 9rem;
+        padding-bottom: 2rem;
+    }
+    .header_nav li{
+        display: block;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+      
+    }
+    .banner {
+    height: 18rem;
+    }
+    
+    .directores-content,.peliculas-content,.mas-premiadas-content{
+    display:grid;
+    grid-template-areas: 
+     "titulo"
+     "parrafo"
+     "img"
+    "video";
+    gap: 0.8rem;
+    }
+    .mas-premiadas-content h2 {
+        
+        max-height: 18rem;
+    }
+    
+    .img{
+        max-width: 90%;
+        height: 22rem;
+        margin-left: 1.5rem;
+    
+    }
+    iframe{
+        max-width: 90%;
+       
+    }
+    .footer {
+        height: 13rem;
+    }
+    
+    .footer_p {
+        margin: 0px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .footer_img li {
+        display: inline-block;
+        padding: 1.5rem;
+        max-width: 1.5rem;
+        margin: 1rem
+    }
+    
+    .footer_img li img {
+        width:3rem;
+    }
+
+}
+@media(min-width:481px) and (max-width:768px){
+    
+    .directores-content,.peliculas-content,.mas-premiadas-content{
+        display:grid;
+        grid-template-areas: 
+        "titulo titulo"
+        "parrafo parrafo"
+        "img video";
+        gap: 0.5rem;
+        max-width: 100%;
+        }
+
+        .header h1{
+            font-size: 5rem;
+        }
+        .header_img {
+            max-width: 9rem;
+            padding-bottom: 2rem;
+        }
+        .header_nav li{
+            display: inline-block;
+            justify-content: space-between;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+          
+        }
+        .banner {
+        height: 18rem;
+        }
+
+        .mas-premiadas-content h2 {
+    
+            max-height: 18rem;
+        }
+        
+        .img{
+            max-width: 90%;
+            height: 20rem;
+            margin-left: 1rem;
+        
+        }
+        iframe{
+            max-width: 90%;
+           
+        }
+        .footer {
+            height: 13rem;
+        }
+        
+        .footer_p {
+            margin: 0px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .footer_img li {
+            display: inline-block;
+            padding: 0.5rem;
+            max-width: 1rem;
+            margin: 1rem
+        }
+        
+        .footer_img li img {
+            width:2rem;
+        }
+    
+}
+@media(min-width:769px) and (max-width:1200px){
+     
+    .directores-content,.peliculas-content,.mas-premiadas-content{
+        display:grid;
+        grid-template-areas: 
+        "titulo titulo"
+        "parrafo parrafo"
+        "img video";
+        gap: 0.5rem;
+        max-width: 100%;
+        }
+
+        .header h1{
+            font-size: 5rem;
+        }
+        .header_img {
+            max-width: 9rem;
+            padding-bottom: 2rem;
+        }
+        .header_nav li{
+            display: inline-block;
+            justify-content: space-between;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+          
+        }
+        .banner {
+        height: 18rem;
+        }
+
+        .mas-premiadas-content h2 {
+    
+            max-height: 18rem;
+        }
+        
+        .img{
+            max-width: 90%;
+            max-width: 30rem;
+            max-height: 20rem;
+        
+        }
+        iframe{
+            max-width: 90%;
+           
+        }
+        .footer {
+            height: 13rem;
+        }
+        
+        .footer_p {
+            margin: 0px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .footer_img li {
+            display: inline-block;
+            padding: 0.5rem;
+            max-width: 1rem;
+            margin: 1rem
+        }
+        
+        .footer_img li img {
+            width:2rem;
+        }
+
+}
