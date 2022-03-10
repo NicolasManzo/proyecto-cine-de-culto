@@ -30,9 +30,89 @@ a {
     font-size: 2rem;
     text-decoration: none;
 }
+ 
+
+/* animaciones */
+
+.elemento_kubrick:hover{
+    animation: redondear 3s;
+}
+@keyframes redondear{
+    25%{
+        border-radius: 50%;
+    }
+   100%{
+        border-radius: 0%;
+
+    }
+}
+.elemento_scorsese:hover{
+    animation: redondear 3s;
+}
+@keyframes redondear{
+    25%{
+        border-radius: 50%;
+    }
+   100%{
+        border-radius: 0%;
+
+    }
+}
+.elemento_tarantino:hover{
+    animation: redondear 3s;
+}
+@keyframes redondear{
+    25%{
+        border-radius: 50%;
+    }
+   100%{
+        border-radius: 0%;
+
+    }
+}
+.elemento_spielberg:hover{
+    animation: redondear 3s;
+}
+@keyframes redondear{
+    25%{
+        border-radius: 50%;
+    }
+   100%{
+        border-radius: 0%;
+
+    }
+}
+.elemento_eastwood:hover{
+    animation: redondear 3s;
+}
+@keyframes redondear{
+    25%{
+        border-radius: 50%;
+    }
+   100%{
+        border-radius: 0%;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
  a:hover {
     color: aliceblue;
+    transition: all 1s;
 }
+
+
 h2 {
     color: rgb(224, 52, 52);
     font-family: 'Bangers', cursive;
@@ -60,6 +140,7 @@ p {
 }
 .header_img{
     max-width: 12rem;
+    
 }
 .header h1{
     color:rgb(224, 52, 52);
@@ -142,6 +223,7 @@ max-width: 100%;
     justify-items: center;
     margin: 0 auto;
 }
+
 .peliculas-content > iframe {
     grid-area:video;
     width: 30rem;
@@ -170,6 +252,7 @@ max-width: 100%;
        margin-left:1.5rem;
        
 }
+
 .elemento_scorsese{
     background-image: url(../img/scorsese.jpg);
     background-position: center;
@@ -480,8 +563,6 @@ max-width: 100%;
     display: inline-block;
     padding: 2rem;
 }
-
-
 
 @media (max-width: 320px ){
 
